@@ -5,7 +5,7 @@ from __future__ import annotations
 import re
 
 _ARABIC_DIACRITICS = re.compile(r"[\u0610-\u061A\u064B-\u065F\u0670\u06D6-\u06ED]")
-_ARABIC_LETTERS = re.compile(r"[\u0621-\u063A\u0641-\u064A]")
+_ARABIC_LETTERS = re.compile(r"[\u0621-\u063A\u0641-\u064A\u0671]")
 _ARABIC_TOKENS = re.compile(r"[\u0621-\u063A\u0641-\u064A]+")
 
 _ALEF_TRANSLATION = str.maketrans({"أ": "ا", "إ": "ا", "آ": "ا", "ٱ": "ا"})
