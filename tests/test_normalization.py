@@ -40,6 +40,7 @@ class TokenizeArabicTests(unittest.TestCase):
 class ContainsArabicTests(unittest.TestCase):
     def test_detects_arabic_letters(self) -> None:
         self.assertTrue(contains_arabic("نص عربي"))
+        self.assertTrue(contains_arabic("ٱ"))
         self.assertFalse(contains_arabic("plain English"))
 
     def test_rejects_non_string_input(self) -> None:
