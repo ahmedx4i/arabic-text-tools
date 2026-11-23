@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "arabic-text-tools"
+version = "0.1.0"
+description = "Dependency-free Arabic text normalization and tokenization utilities."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Ahmed Munther" }
+]
+keywords = ["arabic", "nlp", "normalization", "text-processing"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Text Processing :: Linguistic",
+]
+
+[project.urls]
+Homepage = "https://github.com/ahmedx4i/arabic-text-tools"
+Issues = "https://github.com/ahmedx4i/arabic-text-tools/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/arabic_text_tools"]
