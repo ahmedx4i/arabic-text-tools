@@ -7,8 +7,9 @@ Thanks for helping improve Arabic Text Tools.
 1. Open an issue first for significant features or behavioral changes.
 2. Keep each change focused and include tests for changed behavior.
 3. Preserve the dependency-free design unless a new dependency is clearly justified.
-4. Run the test suite:
+4. Install the package and run the test suite:
 
+       python -m pip install -e .
        python -m unittest discover -s tests
 
 ## Design principles
