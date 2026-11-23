@@ -10,12 +10,10 @@ Small, dependency-free Python utilities for normalizing and tokenizing Arabic te
 - Detect whether text contains Arabic characters
 - Standard-library only, with a tested public API
 
-## Install
+## Install from source
 
-    pip install arabic-text-tools
-
-For local development:
-
+    git clone https://github.com/ahmedx4i/arabic-text-tools.git
+    cd arabic-text-tools
     python -m pip install -e .
 
 ## Quick start
@@ -35,6 +33,11 @@ For local development:
 - contains_arabic(text) checks whether a string contains Arabic-script letters.
 
 The normalizer is intentionally conservative: it does not transliterate or change words beyond the explicitly selected character normalizations.
+
+## Testing
+
+    python -m pip install -e .
+    python -m unittest discover -s tests
 
 ## Contributing
 
